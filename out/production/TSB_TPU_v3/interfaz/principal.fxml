@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.PrincipalController">
+   <children>
+      <Label fx:id="lblCarpeta" layoutX="227.0" layoutY="23.0" prefHeight="17.0" prefWidth="343.0" text="D:\resultados" />
+      <Label layoutX="170.0" layoutY="23.0" prefHeight="17.0" prefWidth="48.0" text="Carpeta:" />
+      <Button fx:id="btnCambiar" layoutX="26.0" layoutY="19.0" mnemonicParsing="false" onAction="#cambiarUbicacion" text="Cambiar Carpeta" />
+      <Button fx:id="btnCargar" layoutX="20.0" layoutY="56.0" mnemonicParsing="false" onAction="#cargar" text="Cargar resultados..." />
+      <ListView fx:id="lvwResultados" layoutX="20.0" layoutY="239.0" prefHeight="244.0" prefWidth="500.0" />
+      <ComboBox fx:id="cboDistritos" layoutX="170.0" layoutY="90.0" onAction="#elegirDistrito" prefHeight="25.0" prefWidth="293.0" />
+      <ComboBox fx:id="cboSecciones" layoutX="170.0" layoutY="126.0" onAction="#elegirSeccion" prefHeight="25.0" prefWidth="293.0" />
+      <ComboBox fx:id="cboCircuito" layoutX="170.0" layoutY="160.0" onAction="#elegirCircuito" prefHeight="25.0" prefWidth="293.0" />
+      <ComboBox fx:id="cboMesas" layoutX="170.0" layoutY="196.0" onAction="#elegirMesa" prefHeight="25.0" prefWidth="293.0" />
+      <Label layoutX="55.0" layoutY="94.0" prefHeight="17.0" prefWidth="48.0" text="Distrito:" />
+      <Label layoutX="55.0" layoutY="130.0" prefHeight="17.0" prefWidth="48.0" text="Seccion:" />
+      <Label layoutX="55.0" layoutY="164.0" prefHeight="17.0" prefWidth="48.0" text="Circuito:" />
+      <Label layoutX="55.0" layoutY="200.0" prefHeight="17.0" prefWidth="48.0" text="Mesa:" />
+      <Button fx:id="btnMostrarPais" disable="true" layoutX="170.0" layoutY="56.0" mnemonicParsing="false" onAction="#elegirPais" text="Mostrar resultados nacionales" />
+   </children>
+</AnchorPane>
